@@ -1,0 +1,44 @@
+
+header {
+    background-color: #0b5fff;
+    
+    /*Bordas*/
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+    /*Margens*/
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+header img {
+    /*Posição e bordas da imagem*/
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 5px solid #0b5fff;
+
+}
+
+nav {
+    /*Posicionamento dos links*/
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 15px;
+}
+
+a {
+    /*Estilização dos links*/
+    color: white;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}
