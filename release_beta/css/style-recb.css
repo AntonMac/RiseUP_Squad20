@@ -103,10 +103,6 @@ nav{
     text-align: center;
     text-decoration: none;
 }
-
-.btn-rec:hover {
-    background-color: #000742;
-}
 @media only screen and (max-width: 950px){
     .card-login{
         width: 85%;
