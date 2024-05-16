@@ -24,7 +24,7 @@ nav {
 .logo {
   display: flex;
   justify-content: center;
-  margin-right: 608px;
+  margin-right:  690px;
 }
 
 .logo img {
@@ -34,12 +34,12 @@ nav {
 }
 
 .titulopage {
-  width: auto;
+  text-align: center;
   height: 250px;
   display: flex;
-  flex-direction: initial;
+
   align-items: center;
-  margin-left: 450px;
+  margin-left: 40px;
   padding: auto;
 }
 
@@ -49,7 +49,7 @@ nav {
   border-radius: 10px;
   padding: 9px;
   background: #0b5fff;
-  color: #ffffffde;
+  color: #ffffff;
   font-size: 12pt;
   outline: none;
   box-sizing: initial;
@@ -72,9 +72,9 @@ nav {
 }
 
 #search-input {
-  background-color: transparent;
+  background-color: #f1f1f1;
   width: 20%;
-  border-bottom: 2px solid #110f29;
+  border-bottom: 2px solid #0b5fff;
   padding: 1em 0.3em;
 }
 
@@ -83,31 +83,18 @@ nav {
   align-items: center;
 }
 
-.button-search {
-  padding: 1em 2em;
-  margin-left: 75px; /* Ajuste conforme necessário */
-  background-color: #0b5fff;
-  color: #ffffff;
-  border-radius: 5px;
-  margin-top: 0.5em;
-  cursor: pointer;
-  transition: background-color 0.1s ease;
-}
-.button-search:hover{
-  background-color: #2b369b;
-}
 
 .card {
   width: 92%;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #0b5fff;
   border-radius: 30px;
   margin: 30px;
   text-align: center;
   cursor: pointer;
   transition: transform 0.3s ease;
-  background-color: #f1f0f1;
-  border-left: 3px solid #4895ff;
+  background-color: #f1f1f1;
+  border-left: 4px solid #4895ff;
 }
 
 .card:hover {
@@ -143,6 +130,16 @@ nav {
 .card-button:hover {
   background-color: #2b369b;
 }
+footer {
+  margin-top: 10px;
+  width: 100%;
+  background-color: transparent;
+  color: black;
+  text-align: center;
+  padding: 10px 0;
+  position: static;
+  bottom: 0;
+}
 
 @media only screen and (max-width: 950px) {
   .card {
@@ -162,6 +159,12 @@ nav {
   .card {
       width: 90%;
   }
+
+  .nav {
+      width: auto;
+  }
+}
+
 
   .nav {
       width: auto;
