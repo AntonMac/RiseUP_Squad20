@@ -138,3 +138,6 @@ h1{
             border: none;
 }
 
+.imagemFundo {
+    background-image: url(img/fundoTexto.jpg);
+}
