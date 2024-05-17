@@ -22,20 +22,21 @@ nav {
     padding: 3px 5px;
     z-index: 1000;
     box-shadow: 0px 1px 5px;
-  }
-  
-  .logo {
+}
+
+.logo {
     display: flex;
     justify-content: center;
-    margin-right: 690px;
-  }
-  
-  .logo img {
+    margin-right: 47%;
+}
+
+.logo img {
     width: 150px;
     height: auto;
     align-items: center;
-  }
-  .back-button {
+}
+
+.back-button {
     margin-left: 0px;
     border: none;
     border-radius: 10px;
@@ -47,21 +48,21 @@ nav {
     box-sizing: initial;
     cursor: pointer;
     transition: background-color 0.1s ease;
-  }
-  
-  .back-button:hover {
+}
+
+.back-button:hover {
     background-color: #2b369b;
-  }
-  
+}
+
 .titulopage {
     text-align: center;
     height: 250px;
     display: flex;
-  
     align-items: center;
     margin-left: 40px;
     padding: auto;
-  }
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -129,24 +130,76 @@ nav {
     margin-bottom: 10px;
 }
 
-.card-aderir {
-    width: 100%;
+.button-aderir {
+    padding: .6rem 1.2rem;
+    background-color: #888;
+    color: #fff;
     border: none;
-    border-radius: 10px;
-    padding: 15px;
-    background: #0b5fff;
-    color: #ffffffde;
-    font-size: 12pt;
-    outline: none;
-    box-sizing: border-box;
+    border-radius: .25rem;
     cursor: pointer;
-    transition: background-color 0.1s ease;
-    }
-      
-.card-aderir:hover {
-        background-color: #2b369b;
-      
+    opacity: .9;
+    font-size: 1rem;
+    transition: opacity 0.4s;
 }
+
+.button-aderir:hover {
+    background-color: #2b369b;
+    opacity: 1;
+}
+
+/* Adicionando estilos para o botão open-modal */
+#open-modal {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    padding: .6rem 1.2rem;
+    font-size: 1rem;
+}
+
+#fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5; /* Colocando o fade atrás do modal */
+}
+
+#modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    z-index: 10;
+    width: 500px;
+    max-width: 90%;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.modal-body p {
+    margin-bottom: 1rem;
+}
+
+/* Adicionando a classe hide para ocultar modal e fade */
+#modal.hide,
+#fade.hide {
+    display: none;
+}
+
 footer {
     margin-top: 10px;
     width: 100%;
