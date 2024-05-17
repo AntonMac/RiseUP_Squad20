@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/detalhescamp.css">
     <link rel="icon" type="imagem/png" href="imagens/favicon.ico">
+    <script></script>
     <title>Detalhes da Campanha</title>
 </head>
 <body>
@@ -20,7 +21,21 @@
             <h2>Menos é mais</h2>
             <p> <strong> Descrição:</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book..</p>
             <p> <strong> Objetivos:</strong> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            <button id="open-modal" class="button-aderir" >Aderir a Campanha</button>
+            <div id="fade" class="hide"></div>
+            <div id="modal" class="hide" >
+                <div class="modal-header">
+                    <h2>Você Aderiu a Campanha!</h2>
+                    <button id="closemodal">Fechar</button>
+                </div>
+                <div class="modal-body">
+                    <p>udjjfjfjfjfjfjfjfjfjfjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</p>
+                    
+                </div>
+            </div>
         </div>
+       
+        
         <div class="card-contribuicoes">
             <div class="cards">
                 <div class="card-campanha">
@@ -42,11 +57,11 @@
             </div>
         </div>
         
-    </div><button onclick="window.location.href='Detalhescamp.html';" class="card-aderir">Aderir a Campanha</button>
+    </div>
     <footer>
         <p>&copy; Todos os direitos reservados.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="scripts.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 </html>
