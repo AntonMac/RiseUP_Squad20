@@ -2,11 +2,16 @@
   font-family: "League Spartan", "Archivo Narrow";
 }
 
-body{
-    background-color:#ffffff;
-    margin: 0;
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0b5fff;
 }
-nav{
+
+nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -14,41 +19,31 @@ nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #ffffff;
+  background-color: transparent;
   padding: 3px 5px;
   z-index: 1000;
-  box-shadow: 0px 1px 5px;
+ 
 }
+
 .logo {
   display: flex;
-  flex-grow: 1; /* Ocupa o espaço restante */
-  justify-content: center; /
-  
+  justify-content: center;
+  margin-right: 45%;
 }
 
 .logo img {
-  width: 150px; 
-  
+  width: 150px;
   height: auto;
   align-items: center;
 }
 
-.titulopage{
-  width: auto;
-  height: 250px;
-  display: flex;
-  flex-direction: initial; 
-  align-items: center;
-  margin-left: 500px;
-  padding: auto;
-}
 .back-button {
   margin-left: 0px;
   border: none;
   border-radius: 10px;
   padding: 9px;
-  background: #0b5fff;
-  color: #ffffffde;
+  background: transparent;
+  color: #ffffff;
   font-size: 12pt;
   outline: none;
   box-sizing: initial;
@@ -56,55 +51,117 @@ nav{
   transition: background-color 0.1s ease;
 }
 
-.back-button:hover{
+.back-button:hover {
   background-color: #2b369b;
-}
-.conteiner{
-  display: center;
-  justify-content: center;
-  align-items: center;
-}
-.card {
-  width: 92%;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 30px; /* Adicionando bordas redondas */
-  margin:30px; /* Reduzindo a distância entre os cards */
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  background-color: #f1f0f1;
-  border-left: 3px solid #4895ff;
 }
 
-.card:hover {
-  transform: translateY(-5px);
+.card {
+  margin-top: 7%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 90%;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.button-aderir {
+  padding: .6rem 1.2rem;
+  background-color: #888;
+  color: #fff;
+  border: none;
+  border-radius: .25rem;
   cursor: pointer;
+  opacity: .9;
+  font-size: 1rem;
+  transition: opacity 0.4s;
 }
-.card p {
-  color: #3f3f42;
-  font-size: 16px;
-}
-.cardimage{
-  float: right;
-  max-width: 64px;
-  max-height: 64px;
-}
-.card-button{
-    width: 100%;
-    border: none;
-    border-radius: 10px;
-    padding: 15px;
-    background: #0b5fff;
-    color: #ffffffde;
-    font-size: 12pt;
-    outline: none;
-    box-sizing: border-box;
-    cursor: pointer;
-    transition: background-color 0.1s ease;
-}
-.card-button:hover{
+
+.button-aderir:hover {
   background-color: #2b369b;
+  opacity: 1;
+}
+
+
+/* Adicionando estilos para o botão open-modal */
+#open-modal {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: .25rem;
+  cursor: pointer;
+  padding: .6rem 1.2rem;
+  font-size: 1rem;
+}
+
+#fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 5; /* Colocando o fade atrás do modal */
+}
+
+#modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  z-index: 10;
+  width: 500px;
+  max-width: 90%;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.modal-body p {
+  margin-bottom: 1rem;
+}
+
+/* Adicionando a classe hide para ocultar modal e fade */
+#modal.hide,
+#fade.hide {
+  display: none;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
 @media only screen and (max-width: 950px){
   .card{
@@ -125,6 +182,12 @@ nav{
       width: auto;
   }
 
+  .center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
   .center{
     display: flex;
     align-items: center;
