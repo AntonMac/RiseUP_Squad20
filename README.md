@@ -148,6 +148,9 @@ Este guia descreve como implantar um site web estático a partir da pasta **rele
 5. **Verifique a Implantação**
 
    Abra um navegador web e navegue até o endereço do seu servidor web para verificar se o site está funcionando corretamente.
+   Uma versão já online pode ser visitada no [link](https://squad20-unit.vercel.app/)
 
 Rise_Up: Squad20-Unit.
+
+
 Recife, Junho de 2024.
