@@ -24,7 +24,7 @@ Este guia descreve como implantar um site web estático a partir da pasta **rele
 
 ## Requisitos
 
-- Acesso ao servidor web (Apache, Nginx, etc.) ou serviço de hospedagem (GitHub Pages, Netlify, etc.).
+- Acesso ao servidor web (Apache, Nginx, etc.) ou serviço de hospedagem (GitHub Pages, Vercel, etc.).
 - Acesso ao terminal/linha de comando.
 - Um editor de texto ou IDE para edição de arquivos (opcional).
 
@@ -131,7 +131,7 @@ Este guia descreve como implantar um site web estático a partir da pasta **rele
        1. Crie uma conta no [Vercel](https://vercel.com/signup).
        2. Clique em "New Project".
        3. Conecte-se ao seu repositório GitHub e selecione o repositório que contém o seu projeto.
-       4. Configure as opções de implantação. O Vercel detectará automaticamente a pasta **release_beta.V2 (COM FONTE)** como o diretório raiz.
+       4. Configure as opções de implantação. Se Vercel não detectar automaticamente a pasta **release_beta.V2 (COM FONTE)** como o diretório raiz, aponte manualmente na opção "Root Directory".
        5. Clique em "Deploy". Seu site estará disponível em uma URL fornecida pelo Vercel.
 
    - **Opção B: Usando um Servidor Web (Apache/Nginx)**
@@ -148,7 +148,7 @@ Este guia descreve como implantar um site web estático a partir da pasta **rele
 5. **Verifique a Implantação**
 
    Abra um navegador web e navegue até o endereço do seu servidor web para verificar se o site está funcionando corretamente.
-   Uma versão já online pode ser visitada no [link](https://squad20-unit.vercel.app/)
+   Uma versão já online pode ser visitada no [link](https://squad20-unit.vercel.app/) , utilize colaborador@gmail.com e membro@gmail.com para acesso, senha em branco para ambos.
 
 Rise_Up: Squad20-Unit.
 
