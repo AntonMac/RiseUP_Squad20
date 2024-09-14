@@ -153,6 +153,4 @@ Este guia descreve como implantar um site web estático a partir da pasta **rele
 
 Rise_Up: Squad20-Unit.
 
-Obs: Esse fork foi modificado pelo Membro do Squad20 'Antonio Macena' para fins de Ajustes no caminho dos Diretorios.
-
 Recife, Junho de 2024.
